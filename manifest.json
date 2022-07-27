@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "My Extension",
+  "short_name": "My Extension",
+  "description": "My Personal Chrome Extension",
+  "version": "0.0.1",
+  "minimum_chrome_version": "38",
+  "permissions": [
+    "contextMenus", 
+    "tabs"],
+  "icons": {
+    "16": "assets/search.png"
+  },
+  "background": {"page": "background.html"},
+  "commands":{
+    "open_proto" :{
+      "suggested_key" :{
+        "default":"Ctrl+Shift+Z",
+        "mac":"Command+Shift+Z"
+      },
+      "description":"Open Proto View"
+    },
+    "open_offer_view" :{
+      "suggested_key" :{
+        "default":"Ctrl+Shift+E",
+        "mac":"Command+Shift+E"
+      },
+      "description":"Open Offer View"
+    },
+    "open_voucher_view":{
+      "suggested_key":{
+        "default":"Ctrl+Shift+V",
+        "mac":"Ctrl+Shift+V"  
+      },
+      "description":"Open Voucher View"
+    }
+  }
+}
